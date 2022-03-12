@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body {
+    background: url('./imagens/bg.jpg') no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    background-color: rgba(58, 53, 53, 0.555);
+    padding: 20px;
+    position: sticky;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 18px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#divSign {
+    display: block;
+    position: absolute;
+    margin-left: 90%;
+    margin-top: -5%;
+}
+
+#sign {
+    background-color: rgba(0, 0, 255, 0.452);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 18px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+
+#sign:hover {
+    background-color: rgba(255, 255, 255, 0.945);
+    color: rgb(0, 0, 0);
+}
+
+#divBusca {
+    background-color: rgba(255, 255, 255, 0.178);
+    margin-top: 20px;
+    width: 200px;
+    height: 32px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+#txtBusca {
+    color: white;
+    position: relative;
+    padding: 0;
+    width: 200px;
+    height: 32px;
+    border-radius: 25px;
+    background-color: transparent;
+    text-align: center;
+    border-width: 0;
+}
+
+#imgBusca {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+#title {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    border: 2px solid black ;
+    width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.poke {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.poke:hover {
+    background-color: rgba(255, 255, 255, 0.288);
+    border-radius: 20px;
+}
+
+.poke:hover > img {
+    width: 110%;
+    height: 110%;
+}
+
+p {
+    display: none;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 5px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: green;
+    text-shadow: 1px 1px 2px black;
+}
+
+div:hover p {
+    display: block;
+}
