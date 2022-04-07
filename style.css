@@ -1,15 +1,20 @@
 @charset "UTF-8";
 
 body {
-    background: url('./imagens/bg.jpg') no-repeat;
-    background-size: 100%;
+    background: url('./imagens/bg2.jpg') no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(58, 53, 53, 0.555);
     padding: 20px;
     position: sticky;
@@ -28,13 +33,6 @@ nav > a:hover {
     transition-duration: 0.4s;
 }
 
-#divSign {
-    display: block;
-    position: absolute;
-    margin-left: 90%;
-    margin-top: -5%;
-}
-
 #sign {
     background-color: rgba(0, 0, 255, 0.452);
     border-radius: 5px;
@@ -43,6 +41,7 @@ nav > a:hover {
     font-weight: bold;
     color: white;
     font-size: 15px;
+    margin-left: auto;
 }
 
 #sign:hover {
@@ -51,7 +50,7 @@ nav > a:hover {
 }
 
 #divBusca {
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(219, 202, 202, 0.466);
     margin-top: 20px;
     width: 200px;
     height: 32px;
@@ -60,13 +59,12 @@ nav > a:hover {
 }
 
 #txtBusca {
-    color: white;
+    color: rgb(0, 0, 0);
     position: relative;
     padding: 0;
     width: 200px;
     height: 32px;
     border-radius: 25px;
-    background-color: transparent;
     text-align: center;
     border-width: 0;
 }
